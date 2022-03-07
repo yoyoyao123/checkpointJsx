@@ -1,23 +1,26 @@
-import React from 'react';
-import './yoyo.css';
+import React, {Component} from 'react';
+import myImage from '../img1.png';
 
-export default class Yoyo extends React.Component {
-  render() {
-    return (
-      <div>
-        <div style={{border: "solid 1px black", maxWidth:"100vw"}}>
+class Yoyo extends Component {
 
-          <h1 className="title red">Votre nom ici</h1>
-          <br>
-          <img src= "/img1.png" alt="Oups!" />
-          </br>
-          <img src="./img2.jpg" alt='Oups!' />
+    render () {
+      return (
+        <div>
+          <div>
+  
+            <h1 className="title red">Votre nom ici</h1>
+            <hr />
+            <img src={myImage} alt="myimage" />
+            <hr />
+            <img src="/img2.jpg" alt='Oups!' />
+          </div>
+  
         </div>
-
-      </div>
-    );
-  }
+      );
+    }
 }
+
+export default Yoyo;
 
 
 
