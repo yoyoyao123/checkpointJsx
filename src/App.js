@@ -1,19 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
-import Yoyo from './composant/Yoyo';
+import React, {Component} from 'react';
+import Yoyo from './composant/Yoyo.jsx';
 import "bootstrap/dist/css/bootstrap.min.css";
-import imageInSrc from  '.src/imageInSrc.PNG';
+import myImage from './img1.png';
 
 
 
-function App() {
-  return (
-    <div className="App">
-      <div>
-        <Yoyo />
+class App extends React.Component {
+  render() {
+    return (
+      <div className="App">
+          <p>bonjour</p>
+          <Yoyo img = {myImage} />
       </div>
-    </div>
-  );
+    );
+  }
 }
 
 export default App;
